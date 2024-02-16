@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>碎碎念</title>
+      <link href="/posts/2928/"/>
+      <url>/posts/2928/</url>
+      
+        <content type="html"><![CDATA[<h1 id="2024-2-16"><a href="#2024-2-16" class="headerlink" title="2024-2-16"></a>2024-2-16</h1><p>嗯嗯嗯重新换了主题，太闲了<br>然后之前的文章都丢了，哈哈操</p><h1 id="2022-6-22"><a href="#2022-6-22" class="headerlink" title="2022-6-22"></a>2022-6-22</h1><p>不知道写点什么……</p><h1 id="时间忘了"><a href="#时间忘了" class="headerlink" title="时间忘了"></a>时间忘了</h1><p>从wordpress转hexo(没买服务器)</p><h1 id="2021-7-30"><a href="#2021-7-30" class="headerlink" title="2021-7-30"></a>2021-7-30</h1><p>刚建成~</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo搭建</title>
+      <link href="/posts/2927/"/>
+      <url>/posts/2927/</url>
+      
+        <content type="html"><![CDATA[<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><hr><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><blockquote><p>官网:<a href="https://git-scm.com/">https://git-scm.com/</a></p></blockquote><p>1、访问Git官网，下载对应安装包，一路确定安装即可</p><p><img src="/assets/img/post/1.jpg" alt="Git"></p><ul><li><p>Additional icons下的On the Desktop | 表示是否在桌面创建快捷方式</p></li><li><p>Windows Explorer integration | 右键菜单显示选项</p></li><li><p>(NEW!)Add a Git Bash ProFile to Windows Terminal | 如果安装了Terminal（终端）则会在终端里添加Git选项</p></li></ul><p>其他默认即可</p><hr><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><blockquote><p>官网:<a href="https://nodejs.org/">https://nodejs.org/</a></p></blockquote><p>访问Node.js官网，下载对应安装包，一路确定安装即可</p><hr><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Git终端输入</p><pre><code>npm install hexo -g</code></pre><hr><h1 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h1><p>标题说了使用Github Page建造，所以你得先有一个Github账号<br>Github官网：<a href="https://github.com/">https://github.com</a> | 可能需要VPN<br>相关教程请Google</p><hr><h2 id="配置key"><a href="#配置key" class="headerlink" title="配置key"></a>配置key</h2><p>终端输入</p><pre><code>ssh-keygen -t ras -C &quot;____&quot;</code></pre><ul><li>“_______”填写你注册的Github时的邮箱</li><li>输入命令后三次回车即可</li></ul><p>进入 | C:\Users\电脑的用户名.ssh</p><p>文件夹中会生成<strong>id_rsa.pub</strong>文件，建议使<a href="https://code.visualstudio.com/">VScode</a>打开</p><p>复制里面的全部内容，打开<a href="https://github.com/settings/keys">https://github.com/settings/keys</a></p><p><img src="/assets/img/post/2.jpg" alt="Github"></p><p>点击</p><p><img src="/assets/img/post/3.jpg" alt="Github"></p><ul><li>Title为备注</li><li>在Key输入粘贴在id_rsa.pub里的全部内容</li><li>然后点击Add-SSH-Key blue</li><li>输入Github账号密码</li></ul><hr><h2 id="配置账号密码"><a href="#配置账号密码" class="headerlink" title="配置账号密码"></a>配置账号密码</h2><pre><code>git config --global user.name &quot;你Github用户名&quot;git config --global user.email &quot;你Github邮箱&quot;</code></pre><hr><h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><p>在任意一个硬盘新建文件夹，进入文件夹右键打开终端</p><pre><code>hexo init</code></pre><ul><li>创建相关文件</li></ul><p><img src="/assets/img/post/4.jpg" alt="Github"></p><hr><table><thead><tr><th align="left">文件</th><th align="right">详细</th></tr></thead><tbody><tr><td align="left">_config.yml</td><td align="right">网站的配置信息，您可以在此配置大部分的参数</td></tr><tr><td align="left">package.json</td><td align="right">应用程序的信息</td></tr><tr><td align="left">scaffolds</td><td align="right">模版文件夹，当您新建文章时，Hexo会根据scaffold来建立文件</td></tr><tr><td align="left">scurce</td><td align="right">存放用户资源</td></tr><tr><td align="left">themes</td><td align="right">存放主题</td></tr><tr><td align="left">scource&#x2F;_posts</td><td align="right">存放文章</td></tr></tbody></table><hr><p>生成静态页面</p><pre><code>hexo g</code></pre><p>预览页面</p><pre><code>hexo s</code></pre><p>浏览器打开localhost:4000<br>看到以下界面说明创建成功</p><p><img src="/assets/img/post/5.jpg" alt="Github"></p><hr><h1 id="卸载Hexo"><a href="#卸载Hexo" class="headerlink" title="卸载Hexo"></a>卸载Hexo</h1><pre><code>npm uninstall hexo-cli -g</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
